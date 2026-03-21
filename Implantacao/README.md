@@ -1,0 +1,1 @@
+| **3. Implantação e Busca Web** | Dispor os dados em um frontend web, com backend seguro e rápido. | JavaScript, Cloudflare Worker (`worker.js`), Cloudflare R2, R2 SDK (`upload.js`). | `index.html`, `ShardedProviderService.js`, `worker.js`, `upload.js` |
