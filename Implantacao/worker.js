@@ -109,7 +109,7 @@ export default {
     const dataObject = await env.BUCKET.get(r2Key);
     
     if (!dataObject) {
-       return new Response(JSON.stringify([]), { headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+      return new Response(JSON.stringify([]), { headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
     }
 
     const rawList = await dataObject.json();
@@ -120,7 +120,26 @@ export default {
     const filteredList = rawList.filter(item => {
         // Normalizações
         const itemCity = (item["Cidade/Estado"] || "").toLowerCase();
-        const itemSpecs = (item["Especialidade(s)"] || item["ODONTOLOGIA"] || "").toLowerCase();
+
+        // Para prestadores de odontologia, o campo "Especialidade(s)" vem vazio ("") e as
+        // especialidades ficam no campo "ODONTOLOGIA" com valores como "CLÍNICA GERAL".
+        // Porém, no mapa de arquivos (e no dropdown do site), a chave é composta:
+        // "ODONTOLOGIA CLÍNICA GERAL". Precisamos reconstruir esse formato aqui para que
+        // o filtro filterSpec.includes() encontre a correspondência corretamente.
+        let itemSpecs;
+        if (item["ODONTOLOGIA"]) {
+            // Separa por vírgula (ex: "CLÍNICA GERAL, ODONTOLOGIA: DENTÍSTICA")
+            // Remove eventual prefixo redundante "ODONTOLOGIA:" que já existe dentro do valor
+            // e prefixa cada sub-especialidade com "ODONTOLOGIA " para formar a chave completa.
+            itemSpecs = item["ODONTOLOGIA"]
+                .split(",")
+                .map(s => "ODONTOLOGIA " + s.replace(/^ODONTOLOGIA\s*:\s*/i, "").trim())
+                .join(", ")
+                .toLowerCase();
+        } else {
+            itemSpecs = (item["Especialidade(s)"] || "").toLowerCase();
+        }
+
         const itemName = (item["Nome"] || "").toLowerCase();
         const itemReg = Object.values(item).join(" ").replace(/[^a-zA-Z0-9]/g, "");
 

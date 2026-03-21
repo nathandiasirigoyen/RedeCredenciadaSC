@@ -455,7 +455,7 @@
                         <div class="info-item full-width specs-box">
                             <span class="label">Especialidades / Serviços</span>
                             <span class="value text-caixa-blue font-semibold">
-                                ${v("Especialidade(s)")}
+                                ${item["ODONTOLOGIA"] ? "ODONTOLOGIA: " + escapeHtml(item["ODONTOLOGIA"]) : v("Especialidade(s)")}
                             </span>
                         </div>
                     </div>
