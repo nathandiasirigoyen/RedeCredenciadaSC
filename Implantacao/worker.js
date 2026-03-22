@@ -10,7 +10,7 @@ export default {
     
     // Configurar CORS (Permite que apenas seu site acesse este Worker)
     const corsHeaders = {
-      'Access-Control-Allow-Origin': 'https://redecredenciadasc.pages.dev',  // Domínio do Pages (sem aspas extras!)
+      'Access-Control-Allow-Origin': 'dominio aqui',  // Domínio do Pages (sem aspas extras!)
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, X-Auth-Token',
     };

@@ -5,9 +5,11 @@
 # Banco de dados consolidado (pode ter centenas de MB)
 rede_credenciada_final.json
 
+
 # Mapa do frontend (gerado localmente pelo sharding.py)
 mapa_para_site_front.json
-
+index2.html
+worker2.js
 # =============================================================
 # Arquivos temporários do Python
 # =============================================================
