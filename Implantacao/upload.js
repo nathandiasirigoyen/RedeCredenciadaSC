@@ -54,4 +54,4 @@ async function uploadFile(filePath) {
   }
 }
 
-run();
+run(); 

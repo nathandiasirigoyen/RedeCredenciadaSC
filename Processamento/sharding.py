@@ -174,5 +174,5 @@ def shard_json_data(input_data, mode, output_base_dir="output_shards"):
                         with open(full_path, 'w', encoding='utf-8') as f:
                             json.dump(providers, f, indent=2, ensure_ascii=False)
 
-    print(f"Sucesso! Arquivos gerados em '{output_base_dir}'")
+    print(f"Sucesso! Arquivos gerados em '{output_base_dir}'") 
     

@@ -5,7 +5,7 @@
 **Data de Criação/Última Revisão:** Janeiro/Março de 2026
 
 ## ⚠️ AVISO LEGAL IMPORTANTE
-Este é um **projeto independente** e não possui **nenhum vínculo oficial** com a Caixa Econômica Federal ou o plano Saúde Caixa. O objetivo é apenas otimizar a visualização e busca dos dados, que são extraídos de fontes públicas. Para acessar o portal oficial, utilize o link: [https://saude.caixa.gov.br/RedeAtendimento/](https://saude.caixa.gov.br/RedeAtendimento/).
+Este é um **projeto independente** e não possui **nenhum vínculo oficial** com a Caixa Econômica Federal ou o plano Saúde Caixa. O objetivo é apenas otimizar a visualização e busca dos dados, que são extraídos de fontes públicas. Para acessar o portal oficial, utilize o link: [https://saude.caixa.gov.br/RedeAtendimento/](https://saude.caixa.gov.br/RedeAtendimento/). 
 
 ---
 

@@ -10,7 +10,7 @@ Projeto Rede Credenciada do Saúde Caixa
 
 2. Construção das utilidades para organização e limpeza dos dados obtidos;
 ✅ Finalizado (2/2).
-
+ 
   2.1 Script organizador:
   🆗 `Processa_html_para_json.py`;
   ✅ Finalizado (3/3). 

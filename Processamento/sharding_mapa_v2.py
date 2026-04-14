@@ -229,4 +229,4 @@ def shard_json_data(input_data, mode, output_base_dir="output_shards", web_path_
         print(f"Mapa gerado com sucesso: {map_path}")
 
     # Chama a função nested imediatamente após gerar os arquivos
-    _create_map_internal()
+    _create_map_internal() 

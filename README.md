@@ -7,7 +7,7 @@
 ## ⚠️ IMPORTANT LEGAL DISCLAIMER
 This is an **independent project** and has **no official affiliation** with Caixa Econômica Federal or the Saúde Caixa health plan. The sole purpose is to optimize the visualization and search of data, which is extracted from public sources. To access the official portal, use the link: [https://saude.caixa.gov.br/RedeAtendimento/](https://saude.caixa.gov.br/RedeAtendimento/).
 
----
+--- 
 
 ## 🎯 Project Overview and Architecture
 

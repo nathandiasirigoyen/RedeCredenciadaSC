@@ -158,4 +158,4 @@ def processar_arquivos():
         print(f"❌ Erro ao salvar JSON: {e}")
 
 if __name__ == "__main__":
-    processar_arquivos()
+    processar_arquivos() 

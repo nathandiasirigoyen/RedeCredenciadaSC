@@ -165,4 +165,4 @@ export default {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' }
     });
   }
-};
+}; 

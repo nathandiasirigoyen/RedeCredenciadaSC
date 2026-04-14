@@ -67,7 +67,7 @@ def executar_scraper_saude_caixa():
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
         driver.implicitly_wait(5)
-        return driver
+        return driver  
     
     def aguardar_elemento(seletor, tempo=TEMPO_ESPERA, clicavel=False):
         try:
